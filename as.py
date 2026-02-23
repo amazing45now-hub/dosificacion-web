@@ -145,7 +145,7 @@ if st.button("⚡ CALCULAR PLANILLA"):
 
     # Métricas en cuadros (Verde Oscuro/Claro/Blanco)
     m1, m2, m3, m4 = st.columns(4)
-    res_list = [(f"{pu:.1f}", "P. UNITARIO (KG/M³)"), (f"{rend:.3f}", "RENDIMIENTO (L)"), ("1.309", "% AIRE"), (f"{ac_real:.3f}")]
+    res_list = [(f"{pu:.1f}"), (f"{rend:.3f}", "RENDIMIENTO (L)"), ("1.309", "% AIRE"), (f"{ac_real:.3f}")]
     
     for col, (val, lab) in zip([m1, m2, m3, m4], res_list):
         with col:
@@ -162,6 +162,7 @@ if st.button("⚡ CALCULAR PLANILLA"):
     st.table(tabla)
 
 st.markdown('<p style="text-align:center; color:#999; margin-top:40px;">Facultad de Ingeniería - UMSA</p>', unsafe_allow_html=True)
+
 
 
 
