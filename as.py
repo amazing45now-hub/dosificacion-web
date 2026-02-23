@@ -26,7 +26,7 @@ st.markdown("<p style='text-align: center; font-weight: bold;'>Tecnología del H
 col1, col2 = st.columns(2)
 
 with col1:
-    st.markdown('<div class="card"><h4>2️⃣ Propiedades Físicas</h4>', unsafe_allow_html=True)
+    st.markdown('<div class="card"><h4> 1 Propiedades Físicas</h4>', unsafe_allow_html=True)
     pe_cemento = st.number_input("Pe Cemento:", value=2.970, format="%.3f")
     pe_grava = st.number_input("Pe Grava:", value=2.639, format="%.3f")
     pe_arena = st.number_input("Pe Arena:", value=2.598, format="%.3f")
@@ -35,7 +35,7 @@ with col1:
     st.markdown('</div>', unsafe_allow_html=True)
 
 with col2:
-    st.markdown('<div class="card"><h4>3️⃣ Datos Ejecutados (g)</h4>', unsafe_allow_html=True)
+    st.markdown('<div class="card"><h4> 2 Datos Ejecutados (g)</h4>', unsafe_allow_html=True)
     hum_grava = st.number_input("% Hum Grava:", value=1.324, format="%.3f")
     hum_arena = st.number_input("% Hum Arena:", value=4.148, format="%.3f")
     vol_revoltura = st.number_input("Vol. Revoltura (m³):", value=0.0155, format="%.4f")
@@ -77,6 +77,5 @@ if st.button("⚡ CALCULAR PLANILLA", use_container_width=True):
     
     # Cuadros de métricas finales como en la foto
     m1, m2, m3 = st.columns(3)
-    m1.metric("A/C REAL", f"{agua_ajustada/cemento_m3:.3f}")
     m2.metric("CONTENIDO AIRE", "1.31 %")
-    m3.metric("PESO UNITARIO", "2341.7 kg/m³")
+
