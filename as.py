@@ -173,4 +173,3 @@ if st.button("⚡ CALCULAR PLANILLA"):
     })
     st.table(df)
 
-st.markdown('<p style="text-align:center; color:#7f8c8d; margin-top:50px;">Desarrollado para Ingeniería Civil - UMSA</p
