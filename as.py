@@ -107,7 +107,7 @@ c1, c2 = st.columns(2)
 
 with c1:
     # 2. Propiedades Físicas
-    st.markdown('<div class="main-card"><div class="card-title"><div class="circle-icon">2</div>Propiedades Físicas</div>', unsafe_allow_html=True)
+    st.markdown('<div class="main-card"><div class="card-title"><div class="circle-icon">1</div>Propiedades Físicas</div>', unsafe_allow_html=True)
     pe_cem = st.number_input("Pe Cemento:", 2.870, format="%.3f")
     pe_gra = st.number_input("Pe Grava:", 2.689, format="%.3f")
     pe_are = st.number_input("Pe Arena:", 2.598, format="%.3f")
@@ -119,7 +119,7 @@ with c1:
 
 with c2:
     # 3. Datos Ejecutados
-    st.markdown('<div class="main-card"><div class="card-title"><div class="circle-icon">3</div>Datos Ejecutados (g)</div>', unsafe_allow_html=True)
+    st.markdown('<div class="main-card"><div class="card-title"><div class="circle-icon">2</div>Datos Ejecutados (g)</div>', unsafe_allow_html=True)
     v_revol = st.number_input("Vol. Revoltura (m³):", 0.0165, format="%.4f")
     agua_a = st.number_input("Agua Añadida:", 3022.2)
     cem_g = st.number_input("Cemento:", 7326.0)
@@ -128,7 +128,7 @@ with c2:
     st.markdown('</div>', unsafe_allow_html=True)
     
     # 4. Hormigón Fresco
-    st.markdown('<div class="main-card"><div class="card-title"><div class="circle-icon">4</div>Hormigón Fresco</div>', unsafe_allow_html=True)
+    st.markdown('<div class="main-card"><div class="card-title"><div class="circle-icon">3</div>Hormigón Fresco</div>', unsafe_allow_html=True)
     p_h_total = st.number_input("Peso Olla + Horm (g):", 18563.0)
     p_vacia = st.number_input("Peso Olla Vacía (g):", 2323.5)
     v_recip = st.number_input("Volumen Olla (cm³):", 6935.0)
@@ -162,4 +162,5 @@ if st.button("⚡ CALCULAR PLANILLA"):
     st.table(tabla)
 
 st.markdown('<p style="text-align:center; color:#999; margin-top:40px;">Facultad de Ingeniería - UMSA</p>', unsafe_allow_html=True)
+
 
